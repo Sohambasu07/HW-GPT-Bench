@@ -217,7 +217,7 @@ class MultilabelPredictor:
         if as_proba:
             predproba_dict = {}
         for label in self.labels:
-            print(f"Predicting with TabularPredictor for label: {label} ...")
+            # print(f"Predicting with TabularPredictor for label: {label} ...")
             predictor = self.get_predictor(label)
             if as_proba:
                 predproba_dict[label] = predictor.predict_proba(
