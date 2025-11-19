@@ -205,6 +205,7 @@ class HWGPT:
             self.search_space_name,
             device,
             hw_metric,
+            base_path=self.base_path,
         )
         predictions_hw = predict_hw_surrogate(
             [arch_feature],
